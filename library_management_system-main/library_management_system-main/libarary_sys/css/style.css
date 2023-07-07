@@ -1,0 +1,98 @@
+/* css stylesheet for books api PROJECT
+  author: Jorge L. jlvazquez
+  date: 2/24/2019
+*/
+
+body {
+  /* background-color: #76a9e0; */
+  background-color: rgb(82, 48, 114);
+
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  margin: auto;
+  margin-top: 200px;
+}
+
+#header {
+  font-family: 'Righteous', sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Righteous', sans-serif;
+}
+
+.book-list {
+  margin-top: 50px;
+  visibility: hidden;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #2f1808;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 30%;
+  margin: 5px;
+}
+
+ul {
+  width: 70%;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 1%;
+  transition: all 0.5s ease;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  margin-right: 40px;
+  text-decoration: none;
+
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
